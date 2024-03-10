@@ -11,13 +11,6 @@ To make the logo responsive and adjust its size appropriately on different devic
   <title>Video Player</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css">
   <style>
-    #logo {
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      z-index: 1000;
-      width: 5%; /* Default width for larger screens */
-      height: auto; /* Automatically adjust height to maintain aspect ratio */
     }
 
     body {
@@ -25,17 +18,9 @@ To make the logo responsive and adjust its size appropriately on different devic
       margin: 0;
       overflow: hidden;
     }
-
     .op-player__media {
       width: 100vw;
       height: 100vh;
-    }
-
-    /* Media query for smaller screens */
-    @media screen and (max-width: 768px) {
-      #logo {
-        width: 10%; /* Adjusted width for smaller screens */
-      }
     }
   </style>
 </head>
