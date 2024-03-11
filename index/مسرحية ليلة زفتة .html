@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +11,8 @@
       top: 5px;
       left: 5px;
       z-index: 1000;
+      width: 10%; /* Adjust the width percentage as needed */
+      height: auto; /* Automatically adjust height to maintain aspect ratio */
     }
 
     body {
@@ -28,15 +28,19 @@
       width: 100vw;
       height: 100vh;
     }
+    
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      #logo {
+        width: 20%; /* Adjust the width percentage for smaller screens */
+      }
+    }
   </style>
 </head>
-
 <body>
-  <img id="logo"
-    src=""
-    alt="Your Logo" />
+  <img id="logo" src="https://blogger.googleusercontent.com/img/a/AVvXsEic2RnnzrmE0rJab7bXL8YaV73o3yiQAmfdl8LF-frVd95nTD6iPseHvjNXYoVCUpqbpyJHBNLd6XvUWIetyBrcreK88ds_v8NO-cu8edR1NAPRly3UnkTEhfIFTgGc4_2bujRbq-QZBfxrk4rK9xCOMiYOzvCy-l5mesres2kuMVhMzI283DjGPOGJAQ=s150" alt="Your Logo" />
   <video class="op-player__media" id="player" controls playsinline>
-    <source
+<source
       src="https://embed-ssl.wistia.com/deliveries/6ab766d20fcd9e7ce6e903b5a05fe13093094a14.bin?disposition=attachment&filename=-1.mp4"
       title="1080p" type="video/mp4" />
     <source
