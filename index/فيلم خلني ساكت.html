@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +11,8 @@
       top: 5px;
       left: 5px;
       z-index: 1000;
+      width: 10%; /* Adjust the width percentage as needed */
+      height: auto; /* Automatically adjust height to maintain aspect ratio */
     }
 
     body {
@@ -28,13 +28,17 @@
       width: 100vw;
       height: 100vh;
     }
+    
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      #logo {
+        width: 20%; /* Adjust the width percentage for smaller screens */
+      }
+    }
   </style>
 </head>
-
 <body>
-  <img id="logo"
-    src="https://blogger.googleusercontent.com/img/a/AVvXsEic2RnnzrmE0rJab7bXL8YaV73o3yiQAmfdl8LF-frVd95nTD6iPseHvjNXYoVCUpqbpyJHBNLd6XvUWIetyBrcreK88ds_v8NO-cu8edR1NAPRly3UnkTEhfIFTgGc4_2bujRbq-QZBfxrk4rK9xCOMiYOzvCy-l5mesres2kuMVhMzI283DjGPOGJAQ=s150"
-    alt="Your Logo" />
+  <img id="logo" src="https://blogger.googleusercontent.com/img/a/AVvXsEic2RnnzrmE0rJab7bXL8YaV73o3yiQAmfdl8LF-frVd95nTD6iPseHvjNXYoVCUpqbpyJHBNLd6XvUWIetyBrcreK88ds_v8NO-cu8edR1NAPRly3UnkTEhfIFTgGc4_2bujRbq-QZBfxrk4rK9xCOMiYOzvCy-l5mesres2kuMVhMzI283DjGPOGJAQ=s150" alt="Your Logo" />
   <video class="op-player__media" id="player" controls playsinline>
     <source
       src="https://www.yacoline.com/upload/videos/2024/02/PCE3nSw8mddjMQwI1RHL_29_24423dd0e65a1c5a231816808431d8e3_video_240p_converted.mp4"
